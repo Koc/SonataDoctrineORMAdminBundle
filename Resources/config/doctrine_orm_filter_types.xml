@@ -9,6 +9,10 @@
             <tag name="sonata.admin.filter.type" alias="doctrine_orm_boolean" />
         </service>
 
+        <service id="sonata.admin.orm.filter.type.notnullable" class="Sonata\DoctrineORMAdminBundle\Filter\NotNullableFilter">
+            <tag name="sonata.admin.filter.type" alias="doctrine_orm_notnullable" />
+        </service>
+
         <service id="sonata.admin.orm.filter.type.callback" class="Sonata\DoctrineORMAdminBundle\Filter\CallbackFilter">
             <tag name="sonata.admin.filter.type" alias="doctrine_orm_callback" />
         </service>
